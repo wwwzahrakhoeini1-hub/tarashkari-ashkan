@@ -269,6 +269,50 @@ footer{
 
     section{
         padding:55px 0;
+        /* Gallery */
+section:has(img[src*="ashkan-work-5.jpg"]) {
+    max-width: 1000px;
+    width: 92%;
+    margin: 30px auto;
+    padding: 30px;
+    background: #151719;
+    border: 1px solid #303438;
+    border-radius: 20px;
+}
+
+section:has(img[src*="ashkan-work-5.jpg"]) h2 {
+    text-align: center;
+    color: #f0a83a;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+section:has(img[src*="ashkan-work-5.jpg"]) img {
+    width: calc(50% - 8px) !important;
+    max-width: none !important;
+    height: 240px;
+    object-fit: cover;
+    margin: 4px !important;
+    border-radius: 15px;
+    border: 1px solid #333;
+    box-shadow: 0 8px 20px rgba(0,0,0,.35);
+}
+
+/* Gallery on phones */
+@media(max-width:600px) {
+    section:has(img[src*="ashkan-work-5.jpg"]) {
+        padding: 15px;
+    }
+
+    section:has(img[src*="ashkan-work-5.jpg"]) img {
+        width: calc(50% - 7px) !important;
+        height: 155px;
+    }
+
+    section:has(img[src*="ashkan-work-5.jpg"]) h2 {
+        font-size: 23px;
+    }
+}
     }
 }
 </style>
