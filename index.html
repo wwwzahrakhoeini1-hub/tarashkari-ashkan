@@ -6,7 +6,7 @@
 
 <title>تراشکاری اشکان | خدمات تراشکاری در زنجان</title>
 
-<meta name="description" content="تراشکاری اشکان در زنجان؛ ارائه خدمات تراشکاری ثابت و سیار، ساخت قطعات صنعتی و کشاورزی، قلاویزکاری، گیربکس، تعمیر پمپ، جک هیدرولیک و جوش آرگون.">
+<meta name="description" content="تراشکاری اشکان در زنجان؛ ارائه خدمات تراشکاری ثابت و سیار، ساخت قطعات صنعتی و کشاورزی، جوش آرگون، تعمیر پمپ، جک هیدرولیک و گیربکس.">
 
 <style>
 
@@ -22,8 +22,8 @@ html{
 
 body{
     font-family:Tahoma,Arial,sans-serif;
-    background:#101214;
-    color:#f5f5f5;
+    background:#0b0d0f;
+    color:#f4f4f4;
     line-height:1.9;
 }
 
@@ -32,598 +32,417 @@ a{
     color:inherit;
 }
 
-.container{
-    width:92%;
-    max-width:1100px;
-    margin:auto;
-}
-
-/* Header */
+/* HEADER */
 
 header{
-    background:#151719;
-    border-bottom:1px solid #333;
     position:sticky;
     top:0;
-    z-index:100;
+    z-index:1000;
+    background:rgba(11,13,15,.94);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid #25292d;
 }
 
 .nav{
-    min-height:70px;
+    max-width:1100px;
+    margin:auto;
+    padding:15px 20px;
     display:flex;
-    align-items:center;
     justify-content:space-between;
-    gap:20px;
+    align-items:center;
 }
 
 .logo{
     font-size:22px;
     font-weight:bold;
-    color:#f0a83a;
+    color:#ff8a00;
+}
+
+.logo span{
+    color:#fff;
 }
 
 nav{
     display:flex;
-    gap:18px;
-    flex-wrap:wrap;
+    gap:22px;
 }
 
 nav a{
-    color:#ddd;
+    color:#ccc;
     font-size:14px;
+    transition:.3s;
 }
 
 nav a:hover{
-    color:#f0a83a;
+    color:#ff8a00;
 }
 
-/* Hero */
+/* HERO */
 
 .hero{
-    padding:85px 0 75px;
-    text-align:center;
-    background:radial-gradient(circle at top,#30281c 0%,#101214 60%);
+    min-height:620px;
+    display:flex;
+    align-items:center;
+    position:relative;
+    overflow:hidden;
+
+    background:
+    linear-gradient(90deg,rgba(5,6,7,.96),rgba(5,6,7,.72),rgba(5,6,7,.45)),
+    url("https://raw.githubusercontent.com/wwwzahrakhoeini1-hub/tarashkari-ashkan/main/ashkan-work-5.jpg");
+
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    max-width:1100px;
+    width:100%;
+    margin:auto;
+    padding:80px 25px;
 }
 
 .badge{
     display:inline-block;
-    border:1px solid #555;
-    color:#f0a83a;
-    padding:5px 16px;
+    padding:7px 16px;
+    border:1px solid #ff8a00;
+    color:#ff9b2f;
     border-radius:30px;
+    font-size:13px;
     margin-bottom:20px;
-    font-size:14px;
+    background:rgba(255,138,0,.08);
 }
 
 .hero h1{
-    font-size:45px;
+    font-size:48px;
+    line-height:1.4;
     margin-bottom:15px;
 }
 
 .hero h1 span{
-    color:#f0a83a;
-}
-
-.hero h2{
-    font-size:22px;
-    margin-bottom:18px;
+    color:#ff8a00;
 }
 
 .hero p{
-    max-width:760px;
-    margin:0 auto 30px;
-    color:#ccc;
+    max-width:650px;
+    color:#d0d0d0;
     font-size:17px;
+    margin-bottom:30px;
 }
 
 .buttons{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    padding:13px 24px;
+    border-radius:9px;
+    font-weight:bold;
+    transition:.3s;
+    display:inline-block;
+}
+
+.btn-primary{
+    background:#ff8a00;
+    color:#111;
+}
+
+.btn-primary:hover{
+    background:#ff9f2e;
+    transform:translateY(-2px);
+}
+
+.btn-outline{
+    border:1px solid #555;
+    background:rgba(255,255,255,.05);
+    color:white;
+}
+
+.btn-outline:hover{
+    border-color:#ff8a00;
+    color:#ff8a00;
+}
+
+/* INFO BAR */
+
+.info-bar{
+    max-width:1050px;
+    margin:-35px auto 60px;
+    position:relative;
+    z-index:5;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    background:#15181b;
+    border:1px solid #292d31;
+    border-radius:15px;
+    overflow:hidden;
+}
+
+.info-item{
+    padding:22px;
+    text-align:center;
+    border-left:1px solid #292d31;
+}
+
+.info-item:last-child{
+    border-left:none;
+}
+
+.info-item strong{
+    display:block;
+    color:#ff8a00;
+    font-size:16px;
+    margin-bottom:4px;
+}
+
+.info-item span{
+    color:#aaa;
+    font-size:13px;
+}
+
+/* GENERAL */
+
+.section{
+    max-width:1100px;
+    margin:auto;
+    padding:75px 20px;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.section-title small{
+    color:#ff8a00;
+    font-size:13px;
+}
+
+.section-title h2{
+    font-size:32px;
+    margin-top:5px;
+}
+
+.section-title p{
+    color:#999;
+    font-size:14px;
+    margin-top:8px;
+}
+
+/* ABOUT */
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:45px;
+    align-items:center;
+}
+
+.about-image img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+    border-radius:18px;
+    border:1px solid #292d31;
+}
+
+.about-text h3{
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+.about-text h3 span{
+    color:#ff8a00;
+}
+
+.about-text p{
+    color:#bcbcbc;
+    font-size:15px;
+}
+
+.about-list{
+    margin-top:20px;
+    display:grid;
+    gap:10px;
+}
+
+.about-list div{
+    background:#15181b;
+    border-right:3px solid #ff8a00;
+    padding:10px 14px;
+    border-radius:7px;
+    color:#ddd;
+    font-size:14px;
+}
+
+/* SERVICES */
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+
+.service{
+    background:linear-gradient(145deg,#171a1d,#101214);
+    border:1px solid #292d31;
+    border-radius:14px;
+    padding:22px;
+    transition:.3s;
+}
+
+.service:hover{
+    transform:translateY(-4px);
+    border-color:#ff8a00;
+}
+
+.service-icon{
+    width:45px;
+    height:45px;
+    border-radius:10px;
+    background:rgba(255,138,0,.1);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:23px;
+    margin-bottom:12px;
+}
+
+.service h3{
+    font-size:17px;
+    margin-bottom:7px;
+}
+
+.service p{
+    color:#999;
+    font-size:13px;
+}
+
+/* GALLERY */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+
+.gallery-item{
+    overflow:hidden;
+    border-radius:15px;
+    border:1px solid #292d31;
+    background:#15181b;
+}
+
+.gallery-item img{
+    width:100%;
+    height:260px;
+    display:block;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.gallery-item:hover img{
+    transform:scale(1.06);
+}
+
+/* CONTACT */
+
+.contact-box{
+    background:
+    linear-gradient(135deg,#171a1d,#0e1012);
+    border:1px solid #292d31;
+    border-radius:20px;
+    padding:45px 30px;
+    text-align:center;
+}
+
+.contact-box h2{
+    font-size:30px;
+    margin-bottom:10px;
+}
+
+.contact-box h2 span{
+    color:#ff8a00;
+}
+
+.contact-box p{
+    color:#aaa;
+    margin-bottom:25px;
+}
+
+.contact-buttons{
     display:flex;
     justify-content:center;
     gap:12px;
     flex-wrap:wrap;
 }
 
-.btn{
-    display:inline-block;
-    padding:12px 25px;
-    border-radius:8px;
-    font-weight:bold;
-}
+/* ADDRESS */
 
-.btn-primary{
-    background:#f0a83a;
-    color:#111;
-}
-
-.btn-secondary{
-    background:#24272a;
-    border:1px solid #555;
-    color:#fff;
-}
-
-/* Sections */
-
-section{
-    padding:70px 0;
-}
-
-.section-title{
+.address{
     text-align:center;
-    margin-bottom:40px;
-}
-
-.section-title h2{
-    font-size:30px;
-    color:#f0a83a;
-    margin-bottom:8px;
-}
-
-.section-title p{
+    margin-top:30px;
     color:#aaa;
-}
-
-/* Services */
-
-.services{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:20px;
-}
-
-.service{
-    background:#191c1f;
-    border:1px solid #303438;
-    border-radius:14px;
-    padding:25px;
-}
-
-.service h3{
-    color:#f0a83a;
-    font-size:18px;
-    margin-bottom:9px;
-}
-
-.service p{
-    color:#ccc;
     font-size:14px;
 }
 
-/* About */
-
-.about{
-    background:#151719;
+.address strong{
+    color:#fff;
 }
 
-.about-box{
-    max-width:850px;
-    margin:auto;
-    text-align:center;
-}
-
-.about-box p{
-    color:#ccc;
-    font-size:17px;
-}
-
-/* Contact */
-
-.contact-box{
-    max-width:800px;
-    margin:auto;
-    background:#191c1f;
-    border:1px solid #303438;
-    border-radius:16px;
-    padding:30px 25px;
-}
-
-.contact-item{
-    padding:15px 0;
-    border-bottom:1px solid #303438;
-    color:#ddd;
-}
-
-.contact-item:last-child{
-    border-bottom:none;
-}
-
-.contact-item strong{
-    color:#f0a83a;
-}
-
-.contact-buttons{
-    text-align:center;
-    margin-top:25px;
-}
-
-/* Gallery */
-
-.gallery{
-    width:92%;
-    max-width:1000px;
-    margin:30px auto;
-    padding:30px;
-    background:#151719;
-    border:1px solid #303438;
-    border-radius:20px;
-}
-
-.gallery h2{
-    text-align:center;
-    color:#f0a83a;
-    font-size:28px;
-    margin-bottom:25px;
-}
-
-.gallery img{
-    width:100%;
-    max-width:700px;
-    height:auto;
-    display:block;
-    margin:20px auto;
-    border-radius:12px;
-}
-
-/* Footer */
+/* FOOTER */
 
 footer{
-    background:#0b0d0e;
-    border-top:1px solid #292c2f;
+    border-top:1px solid #25292d;
     text-align:center;
-    padding:25px 15px;
-    color:#888;
+    padding:30px 20px;
+    color:#777;
     font-size:13px;
 }
 
-/* Mobile */
+footer strong{
+    color:#ff8a00;
+}
 
-@media(max-width:750px){
+/* MOBILE */
+
+@media(max-width:700px){
 
     .nav{
-        flex-direction:column;
-        padding:15px 0;
+        padding:14px 15px;
+    }
+
+    .logo{
+        font-size:18px;
     }
 
     nav{
-        justify-content:center;
-        gap:12px;
+        display:none;
     }
 
     .hero{
-        padding:60px 0;
+        min-height:590px;
+        background-position:center;
+    }
+
+    .hero-content{
+        padding:70px 20px;
     }
 
     .hero h1{
-        font-size:34px;
+        font-size:35px;
     }
 
-    .hero h2{
-        font-size:19px;
+    .hero p{
+        font-size:15px;
     }
 
-    .services{
+    .info-bar{
+        margin:20px 15px 20px;
         grid-template-columns:1fr;
     }
 
-    section{
-        padding:55px 0;
-    }
-
-    .gallery{
-        width:92%;
-        padding:15px;
-    }
-
-    .gallery h2{
-        font-size:23px;
-    }
-
-}
-
-</style>
-</head>
-
-<body>
-
-<header>
-    <div class="container nav">
-
-        <div class="logo">
-            تراشکاری اشکان
-        </div>
-
-        <nav>
-            <a href="#home">خانه</a>
-            <a href="#services">خدمات</a>
-            <a href="#about">درباره ما</a>
-            <a href="#contact">تماس</a>
-        </nav>
-
-    </div>
-</header>
-
-<main>
-
-<!-- HERO -->
-
-<section class="hero" id="home">
-
-    <div class="container">
-
-        <div class="badge">
-            خدمات تراشکاری و قطعه‌سازی در زنجان
-        </div>
-
-        <h1>
-            تراشکاری <span>اشکان</span>
-        </h1>
-
-        <h2>
-            ارائه کلیه خدمات تراشکاری به صورت ثابت و سیار
-        </h2>
-
-        <p>
-            ساخت و تولید انواع قطعات صنعتی و کشاورزی،
-            تعمیر و ساخت تجهیزات صنعتی و ارائه خدمات تخصصی
-            تراشکاری و جوش آرگون.
-        </p>
-
-        <div class="buttons">
-
-            <a class="btn btn-primary" href="tel:09195810925">
-                📞 تماس با کارگاه
-            </a>
-
-            <a class="btn btn-primary" href="https://balad.ir/p/1nTxF0HU83A8SR" target="_blank">
-                📍 مسیریابی با بلد
-            </a>
-
-            <a class="btn btn-primary" href="https://www.instagram.com/ashkan_turrner7779/" target="_blank">
-                📷 اینستاگرام تراشکاری اشکان
-            </a>
-
-            <a class="btn btn-secondary" href="#services">
-                مشاهده خدمات
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ABOUT -->
-
-<section class="about" id="about">
-
-    <div class="container">
-
-        <div class="section-title">
-            <h2>درباره تراشکاری اشکان</h2>
-            <p>ارائه خدمات تخصصی تراشکاری در زنجان</p>
-        </div>
-
-        <div class="about-box">
-
-            <p>
-                تراشکاری اشکان ارائه‌دهنده کلیه خدمات تراشکاری
-                به صورت ثابت و سیار است. ساخت و تولید انواع
-                قطعات صنعتی و کشاورزی، تعمیر و ساخت تجهیزات،
-                خدمات تخصصی قلاویزکاری، گیربکس، پمپ، جک هیدرولیک
-                و جوش آرگون با توجه به نیاز مشتری انجام می‌شود.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- SERVICES -->
-
-<section id="services">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <h2>خدمات تراشکاری اشکان</h2>
-
-            <p>
-                مجموعه‌ای از خدمات تخصصی برای صنایع و ماشین‌آلات
-            </p>
-
-        </div>
-
-        <div class="services">
-
-            <div class="service">
-                <h3>🔧 تراشکاری ثابت و سیار</h3>
-                <p>
-                    ارائه کلیه خدمات تراشکاری به صورت ثابت و سیار،
-                    با امکان انجام خدمات در محل.
-                </p>
-            </div>
-
-            <div class="service">
-                <h3>⚙️ ساخت قطعات صنعتی و کشاورزی</h3>
-                <p>
-                    ساخت و تولید انواع قطعات صنعتی و کشاورزی
-                    مطابق سفارش و نیاز مشتری.
-                </p>
-            </div>
-
-            <div class="service">
-                <h3>🔩 قلاویزکاری و بوش فنری</h3>
-                <p>
-                    انجام کلیه خدمات قلاویزکاری و بوش فنری
-                    با دستگاه قلاویززن اتوماتیک.
-                </p>
-            </div>
-
-            <div class="service">
-                <h3>⚙️ گیربکس‌های دور متغیر</h3>
-                <p>
-                    طراحی و ساخت انواع گیربکس‌های دور متغیر
-                    و انجام تعمیرات در محل.
-                </p>
-            </div>
-
-            <div class="service">
-                <h3>💧 تعمیر انواع پمپ</h3>
-                <p>
-                    تعمیر انواع پمپ آب‌های زمینی و پمپ روغن
-                    با ارائه خدمات تخصصی.
-                </p>
-            </div>
-
-            <div class="service">
-                <h3>🔧 ثابت‌تراشی و سوراخ‌کاری</h3>
-                <p>
-                    انجام خدمات ثابت‌تراشی و سوراخ‌کاری
-                    برای انواع قطعات صنعتی.
-                </p>
-            </div>
-
-            <div class="service">
-                <h3>🛠️ ساخت و تعمیر جک هیدرولیک</h3>
-                <p>
-                    ساخت و تعمیر انواع جک‌های هیدرولیک
-                    برای کاربردهای مختلف صنعتی و کشاورزی.
-                </p>
-            </div>
-
-            <div class="service">
-                <h3>🔥 جوش آرگون ثابت و سیار</h3>
-                <p>
-                    خدمات جوش آرگون به صورت ثابت و سیار،
-                    شامل جوشکاری انواع آلومینیوم، برنج، مس،
-                    تیتانیوم و استیل.
-                </p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- CONTACT -->
-
-<section id="contact">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <h2>تماس با ما</h2>
-
-            <p>
-                برای سفارش و دریافت خدمات با ما تماس بگیرید
-            </p>
-
-        </div>
-
-        <div class="contact-box">
-
-            <div class="contact-item">
-
-                <strong>📍 آدرس کارگاه:</strong>
-
-                <br>
-
-                زنجان، خیابان توحید،
-                جنب کوچه ذبیحیان،
-                روبه‌روی داروخانه حکیم
-
-            </div>
-
-            <div class="contact-item">
-
-                <strong>📞 شماره تماس:</strong>
-
-                <br>
-
-                <span dir="ltr">
-                    09195810925
-                </span>
-
-            </div>
-
-            <div class="contact-item">
-
-                <strong>🔧 نوع خدمات:</strong>
-
-                <br>
-
-                خدمات ثابت و سیار تراشکاری،
-                ساخت قطعات صنعتی و کشاورزی،
-                تعمیر و ساخت تجهیزات صنعتی
-                و جوش آرگون.
-
-            </div>
-
-            <div class="contact-buttons">
-
-                <a class="btn btn-primary" href="tel:09195810925">
-                    📞 تماس مستقیم
-                </a>
-
-                <a class="btn btn-primary" href="https://balad.ir/p/1nTxF0HU83A8SR" target="_blank">
-                    📍 مسیریابی با بلد
-                </a>
-
-                <a class="btn btn-primary" href="https://www.instagram.com/ashkan_turrner7779/" target="_blank">
-                    📷 اینستاگرام
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- GALLERY -->
-
-<section class="gallery">
-
-    <h2>نمونه‌کارهای تراشکاری اشکان</h2>
-
-    <img src="https://raw.githubusercontent.com/wwwzahrakhoeini1-hub/tarashkari-ashkan/main/ashkan-work-5.jpg"
-    alt="نمونه‌کار تراشکاری اشکان">
-
-    <img src="https://raw.githubusercontent.com/wwwzahrakhoeini1-hub/tarashkari-ashkan/main/54f129e9488da54006fb898d20cfc997.jpg"
-    alt="نمونه‌کار تراشکاری اشکان">
-
-    <img src="https://raw.githubusercontent.com/wwwzahrakhoeini1-hub/tarashkari-ashkan/main/96624e618a8a56d1635b9b0d345a2b9b.jpg"
-    alt="نمونه‌کار تراشکاری اشکان">
-
-    <img src="https://raw.githubusercontent.com/wwwzahrakhoeini1-hub/tarashkari-ashkan/main/f6420862aed6fbfc459ed214fe86a9b4.jpg"
-    alt="نمونه‌کار تراشکاری اشکان">
-
-    <img src="https://raw.githubusercontent.com/wwwzahrakhoeini1-hub/tarashkari-ashkan/main/a02d4df637612e96b8d99058532b28f1.jpg"
-    alt="نمونه‌کار تراشکاری اشکان">
-
-    <img src="https://raw.githubusercontent.com/wwwzahrakhoeini1-hub/tarashkari-ashkan/main/5d88cc5f4f0c2cefd0829ba69f08f24f.jpg"
-    alt="نمونه‌کار تراشکاری اشکان">
-
-</section>
-
-</main>
-
-
-<footer>
-
-    © 2026 تراشکاری اشکان
-    <br>
-    ارائه خدمات تراشکاری و ساخت قطعات در زنجان
-
-</footer>
-
-</body>
-    </html>
+    .info-item{
+        border-left:none;
+        border-bottom:1px solid #
